@@ -1,12 +1,12 @@
 FROM nginx:latest
 
+# TODO: Add here the project's domain
 # Main Environmental Variables
 ENV REVERSE_PROXY_EXECUTION_MODE='production' \
     REVERSE_PROXY_EXECUTION_STAGE='production' \
     REVERSE_PROXY_CONFIG_DIR='/config' \
     REVERSE_PROXY_HTML_DIR='/html'
 
-# TODO: Add here the projects' domains
 # Projects' Environmental Variables
 ENV REVERSE_PROXY_DOMAIN_1='project_1.domain.gr' \
     REVERSE_PROXY_DOMAIN_1_EMAIL='project_1_noreply@iti.gr' \

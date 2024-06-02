@@ -45,7 +45,7 @@ errors.conf redirects to error pages in case of an error
 - The second script that is executed is named `configurate.sh` and manages the nginx configuration by coping all `.conf` files from
 `REVERSE_PROXY_CONFIG_DIR` directory to nginx installation directory
 
-- The last script, named `certificates.sh`, installs `self-signed` certificates and `Diffie Hellman key` in case there are non, to ensure that nginx will start properly (nginx fails to start if certs are missing). Then it tries to create certbot certificates and copy them to SSL directory of nginx. Also starts `cron` that handles the auto-renewal of them
+- The last script, named `certificates.sh`, installs `self-signed` certificates and `Diffie Hellman key` in case there are non, to ensure that nginx will start properly (nginx failes to start if certs are missing). Then it tries to create certbot certificates and copy them to SSL directory of nginx. Also starts `cron` that handles the auto-renewal of them
 
 ## How to Configure
 
